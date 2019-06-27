@@ -1,3 +1,5 @@
+<div class="container">
+<div class="text-center">
 <%= form_for @sea do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
@@ -25,4 +27,9 @@
 
   <%=  f.submit %>
 
+  
   <% end %>
+<%=  button_to "delete", @sea, :method => :delete %>
+
+</div>
+</div>
